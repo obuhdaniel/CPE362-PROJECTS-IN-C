@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+void mySquare (int number ){
+    int result = number * number;
+    printf(" The square of %d = %d", number, result);    
+}
+
+int main (){   
+    mySquare(2);    
+}
+
+//This code is using a void function to get the square
