@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int calc(int number1, int number2){
+    int result = number1 * number2;
+    return result;
+}
+
+int main(){
+    
+   int answer = calc( 2, 4);
+   printf("The result of the multiplication is %d", answer);
+   
+    
+    
+}
+
+//disadvantage of this retuen value statement is that we can only pass parameters once
