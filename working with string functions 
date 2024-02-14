@@ -1,0 +1,22 @@
+#include <stdio.h> 
+int main(){
+    //Declaring the string as an array
+    char fullName [50];
+    
+    //printing put the entry message
+    printf("This is a program to understand working with strings \n \n \n Enter your Full name: ");
+    
+    //calling the fgets function and passing stdin as an argument for the function to read the next keyboard inputs till the user types the enter keyword
+    fgets(fullName,50,stdin);
+    
+    
+    //Now the user input is returned back
+    printf(" My full name is %s \n",fullName);
+    
+    //printing the additional programs features
+    printf(" This is the name given to me by my parents \n \n This name appears in all my Documents");
+    
+    
+     // main is a return function so good practice requires returning   
+    return 0;
+}
