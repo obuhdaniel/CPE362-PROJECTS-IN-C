@@ -1,0 +1,100 @@
+// Include header files for printing on screen
+#include<stdio.h>
+
+
+//Declare the struxture
+struct Car{
+    
+    //add structure members
+    char Brand[30];
+    char Engine[30];
+    double Generation;
+    char Model[30];
+    char Transmission[30];
+    int Year;
+    char Color[30];
+    int Power;
+    int Speed;
+    
+};
+
+
+//call tye main function which holds the main logic of our Program
+int main(){
+    
+    printf("\n \n");
+    
+    printf(" \t Welcome to a Car Specification System");
+    
+    //creating Structure variable 1
+    struct Car Car1 ={
+        
+         //Assigning Values to Structure Variable 1 members
+        "Toyota",
+        "Petrol",
+        2.2,
+        "Camry",
+        "Automatic",
+        1999,
+        "Yellow",
+        133,
+        300
+    };
+    
+    
+    //Creating a Structure Variable Car 2 to reuse The Car structure
+     struct Car Car2 = {
+        
+        //Assigning Values to Structure Variable 2 members
+        "Honda",
+        "Petrol",
+        13.5,
+        "Accord",
+        "Manual",
+        2017,
+        "Red",
+        330,
+        400
+    };
+    
+    
+    
+    //printing Structure 1 values
+    printf("\n\n\t Car 1\n\n ");
+    
+    printf("Car Brand is %s \n", Car1.Brand);
+    printf("Car Model is %s \n", Car1.Model);
+    printf("Car Generation is %d \n", Car1.Generation);
+    printf("Car Engine is %s \n", Car1.Engine);
+    printf("Car Transmission is %s\n", Car1.Transmission);
+    printf("Car Year of Manufacture is %d\n", Car1.Year);
+    printf("Car Color is %s \n", Car1.Color);
+    
+    printf("Car Power is %d HP \n", Car1.Power);
+    printf("Car Speed id %d km/hr \n", Car1.Speed);
+    
+    
+    
+    
+    //printing Structure 2 values
+    
+    printf("\n\n\tCar 2  \n\n");
+    
+     printf("Car Brand is %s \n", Car2.Brand);
+    printf("Car Model is %s \n", Car2.Model);
+    printf("Car Generation is %d \n", Car2.Generation);
+    printf("Car Engine is %s \n", Car2.Engine);
+    printf("Car Transmission is %s\n", Car2.Transmission);
+    printf("Car Year of Manufacture is %d\n", Car2.Year);
+    printf("Car Color is %s \n", Car2.Color);
+    
+    printf("Car Power is %d HP \n", Car2.Power);
+    printf("Car Speed id %d km/hr \n", Car2.Speed);
+    
+    
+    //Good practice requires we return a value allways in tye maun function
+    
+    return 0;
+    
+}
+    
